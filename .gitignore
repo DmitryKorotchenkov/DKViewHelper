@@ -1,0 +1,7 @@
+.idea
+DKViewHelper.xcworkspace/xcuserdata/*
+DKViewHelper.xcodeproj/xcuserdata/*
+DKViewHelper.xcodeproj/project.xcworkspace/xcuserdata/*
+Pods.xcodeproj/xcuserdata/*
+Pods.xcodeproj/project.xcworkspace/xcuserdata/*
+.DS_Store
