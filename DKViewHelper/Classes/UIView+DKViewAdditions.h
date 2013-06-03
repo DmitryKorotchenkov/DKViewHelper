@@ -21,9 +21,11 @@
 @property CGFloat width;
 
 - (CGPoint)innerCenter;
-
 - (CGFloat)innerCenterX;
-
 - (CGFloat)innerCenterY;
+
++ (void)animateFromCurrentStateWithDuration:(NSTimeInterval)duration animations:(void (^)())animations NS_AVAILABLE_IOS(4_0);
+
++ (void)animateFromCurrentStateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(4_0);
 
 @end

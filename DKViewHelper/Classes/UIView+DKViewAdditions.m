@@ -94,5 +94,14 @@
     self.frame = frame;
 }
 
+#pragma mark Animations
+
++ (void)animateFromCurrentStateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations {
+    [self animateFromCurrentStateWithDuration:duration animations:animations completion:nil];
+}
+
++ (void)animateFromCurrentStateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion {
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:animations completion:completion];
+}
 
 @end
